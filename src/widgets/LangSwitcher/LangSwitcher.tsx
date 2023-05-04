@@ -1,11 +1,10 @@
 import { classNames } from "shared/lib/classNames/classNames";
 import cls from './LangSwitcher.module.scss'
-import { Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import Button, { ThemeButton } from "shared/ui/Button/Button";
 
 interface LangSwitcherProps {
-    className?: string;
+    className?: string
 }
 
 const LangSwitcher = ({ className }: LangSwitcherProps) => {
@@ -17,12 +16,12 @@ const LangSwitcher = ({ className }: LangSwitcherProps) => {
 
     return (
         <div className={classNames(cls.LangSwitcher, {}, [className])}>
-                <Button
-                    onClick={toggle}
-                    theme={ThemeButton.CLEAR}
-                >
-                    {t('Язык')}
-                </Button>
+            <Button
+                onClick={toggle}
+                theme={ThemeButton.CLEAR}
+            >
+                {t('Язык')}
+            </Button>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import cls from './Navbar.module.scss';
 import AppLink from "shared/ui/AppLink/AppLink";
 
 interface NavbarProps {
-    className?: string;
+    className?: string
 }
 
 const Navbar = ({ className }: NavbarProps) => {

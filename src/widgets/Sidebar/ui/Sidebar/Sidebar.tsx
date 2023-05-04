@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "widgets/ThemeSwitcher";
 import LangSwitcher from "widgets/LangSwitcher/LangSwitcher";
 
 interface SidebarProps {
-    className?: string;
+    className?: string
 }
 
 const Sidebar = ({ className }: SidebarProps) => {
