@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'standard-with-typescript'
+    'standard-with-typescript',
+    'plugin:i18next/recommended'
   ],
   overrides: [
   ],
@@ -16,7 +17,9 @@ module.exports = {
     project: './tsconfig.json'
   },
   plugins: [
-    'react'
+    'react',
+    '@typescript-eslint',
+    'i18next',
   ],
   rules: {
     "@typescript-eslint/dot-notation": "error",
@@ -34,6 +37,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "eol-last": "off",
     'no-underscore-dangle': 'off',
+    "i18next/no-literal-string": ['error', {markupOnly: true}]
   },
   globals: {
     '__IS_DEV__': true,
