@@ -31,12 +31,16 @@
     // import * as React from 'react';
     // можно писать такой
     // import React from 'react';
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["jest", "@testing-library/jest-dom"]
   },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS",
       "strictNullChecks": false,
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTest.ts",
+  ],
 }

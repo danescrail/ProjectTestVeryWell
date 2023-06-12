@@ -4,6 +4,7 @@ module.exports = {
     es2021: true,
     jest: true,
   },
+  
   extends: [
     'plugin:react/recommended',
     'standard-with-typescript',
@@ -32,15 +33,17 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": 'off',
     "@typescript-eslint/no-misused-promises": 'warn',
     "@typescript-eslint/naming-convention": 'off',
+    "@typescript-eslint/space-before-function-paren": 'off',
     "indent": ["error", 4],
     "@typescript-eslint/quotes": "off",
     "no-unused-vars": "warn",
     "react/react-in-jsx-scope": "off",
     "eol-last": "off",
     'no-underscore-dangle': 'off',
-    "i18next/no-literal-string": ['error', {markupOnly: true}]
+    "i18next/no-literal-string": ['error', {markupOnly: true}],
   },
   globals: {
     '__IS_DEV__': true,
-  }
+  },
+  eslintIgnore: [".eslintrc.js"]
 }
